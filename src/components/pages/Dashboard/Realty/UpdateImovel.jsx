@@ -80,7 +80,7 @@ function UpdateRealty() {
 
   return (
     <section className="flex flex-col">
-      <div className="self-end">
+      <div className="mb-8 self-end flex gap-8">
         <form onSubmit={
           async (e) => {
             e.preventDefault()
@@ -103,14 +103,14 @@ function UpdateRealty() {
             setFlashMessage(data.message)
           }
         }>
-          <select name="user" id="user">
+          <select className="mr-2 rounded-full border-slate-300 text-gray-500" name="user" id="user">
             {owners.length > 0 &&
               owners.map((owner) => (
                 <option value={owner._id}>{owner.name}</option>
               ))
             }
           </select>
-          <button type="submit">Selecionar Proprietário</button>
+          <button className="p-2.5 rounded-full bg-JReal-200 text-white text-sm" type="submit">Designar Proprietário</button>
         </form>
         <form onSubmit={
           async (e) => {
@@ -134,14 +134,14 @@ function UpdateRealty() {
             setFlashMessage(data.message)
           }
         }>
-          <select name="user" id="user">
+          <select className="mr-2 rounded-full border-slate-300 text-gray-500" name="user" id="user">
             {renters.length > 0 &&
               renters.map((renter) => (
                 <option value={renter._id}>{renter.name}</option>
               ))
             }
           </select>
-          <button type="submit">Selecionar Inquilino</button>
+          <button className="p-2.5 rounded-full bg-JReal-200 text-white text-sm" type="submit">Designar Inquilino</button>
         </form>
       </div>
 

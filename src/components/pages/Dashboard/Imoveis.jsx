@@ -70,6 +70,9 @@ function Imoveis() {
                 {realty.status === "Disponível" &&
                   <p className="w-fit py-1.5 px-2.5 bg-gray-300 rounded-full flex items-center justify-center text-sm">{realty.status}</p>
                 }
+                {realty.status === "Ocupado" &&
+                  <p className="w-fit py-1.5 px-2.5 bg-green-300 rounded-full flex items-center justify-center text-sm">{realty.status}</p>
+                }
 
               </div>
               <div className="col-span-3 text-center">
