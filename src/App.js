@@ -12,7 +12,10 @@ import RegisterRenter from './components/pages/Auth/RegisterRenter'
 import SelectRole from "./components/pages/Auth/SelectRole"
 import ForgotPassword from './components/pages/Auth/ForgotPassword'
 import ResetPassword from "./components/pages/Auth/ResetPassword"
+<<<<<<< HEAD
 import NotFound from "./components/pages/NotFound"
+=======
+>>>>>>> 8c17a86729ee79e00cd7a469a359c1522ca2ce8f
 
 import Home from "./components/pages/Dashboard/Home"
 import Imoveis from './components/pages/Dashboard/Imoveis'
@@ -59,8 +62,11 @@ function App() {
             <Route path="/dashboard/imoveis/:id" element={<DetalhesImovel />} />
             <Route path="/dashboard/imoveis/update/:id" element={<UpdateRealty />} />
           </Route>
+<<<<<<< HEAD
 
           <Route path="*" element={<NotFound />} />
+=======
+>>>>>>> 8c17a86729ee79e00cd7a469a359c1522ca2ce8f
         </Routes>
         <Message />
       </UserProvider>

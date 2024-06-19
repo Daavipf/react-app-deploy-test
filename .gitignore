@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
 
 .env
+=======
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+.env
+>>>>>>> 8c17a86729ee79e00cd7a469a359c1522ca2ce8f
 .env.local
